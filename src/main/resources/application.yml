@@ -1,0 +1,14 @@
+server:
+  port: 8181
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dormitory
+    username: root
+    password: yangkang123
+mybatis-plus:
+  configuration:
+#    ��ӡsql���
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    �ҵ�xml�ļ�
+  mapper-locations: com/southwind/mapper/xml/*.xml
